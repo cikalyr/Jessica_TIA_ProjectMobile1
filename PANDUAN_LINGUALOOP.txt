@@ -1,0 +1,56 @@
+LINGUALOOP - PANDUAN PRAKTIKUM ANDROID
+======================================
+
+Project berasal dari ZIP Jessica_TIA_P3. Package tetap com.example.jessica_tia.
+Fitur starter:
+- Splash Screen
+- Login lokal menggunakan SharedPreferences
+- MainActivity dengan Toolbar, Option Menu, dan BottomNavigationView
+- Fragment Home, Vocabulary, Profile
+- ListView + custom ArrayAdapter untuk daftar kosakata
+- AlertDialog untuk konfirmasi logout
+- WebViewActivity berisi tips belajar HTML lokal
+- CoordinatorLayout untuk struktur halaman utama
+
+CARA MEMBUKA
+1. Ekstrak ZIP ke folder biasa, bukan di dalam folder Android Studio lain.
+2. Buka Android Studio > Open > pilih folder Jessica_3TIA.
+3. Tunggu Gradle Sync selesai. Jika Android Studio meminta download komponen Gradle/SDK, izinkan saat internet tersedia.
+4. Jalankan aplikasi pada emulator/perangkat.
+
+ALUR UJI
+1. Aplikasi membuka Splash Screen.
+2. Jika belum login, masuk ke Login.
+3. Isi username dan password apa saja (demo lokal, bukan autentikasi server).
+4. Halaman Home tampil dengan Bottom Navigation.
+5. Pilih Vocabulary untuk menguji ListView dan Custom Adapter.
+6. Pilih Profile untuk melihat username dan tombol logout.
+7. Di menu titik tiga Toolbar, pilih Tips Belajar untuk membuka WebView atau Logout untuk membuka AlertDialog.
+
+FILE PENTING
+app/src/main/AndroidManifest.xml
+app/src/main/java/com/example/jessica_tia/SplashActivity.kt
+app/src/main/java/com/example/jessica_tia/LoginActivity.kt
+app/src/main/java/com/example/jessica_tia/MainActivity.kt
+app/src/main/java/com/example/jessica_tia/HomeFragment.kt
+app/src/main/java/com/example/jessica_tia/VocabularyFragment.kt
+app/src/main/java/com/example/jessica_tia/ProfileFragment.kt
+app/src/main/java/com/example/jessica_tia/WebViewActivity.kt
+app/src/main/java/com/example/jessica_tia/model/Vocabulary.kt
+app/src/main/java/com/example/jessica_tia/adapter/VocabularyAdapter.kt
+app/src/main/res/layout/activity_splash.xml
+app/src/main/res/layout/activity_login.xml
+app/src/main/res/layout/activity_main.xml
+app/src/main/res/layout/fragment_home.xml
+app/src/main/res/layout/fragment_vocabulary.xml
+app/src/main/res/layout/fragment_profile.xml
+app/src/main/res/layout/item_vocabulary.xml
+app/src/main/res/layout/activity_webview.xml
+app/src/main/res/menu/bottom_nav_menu.xml
+app/src/main/res/menu/main_menu.xml
+
+CATATAN
+- Login dibuat sederhana untuk praktikum. Username/password tidak diverifikasi ke server/database.
+- WebView menggunakan HTML lokal, sehingga tidak memerlukan URL internet.
+- Progress/XP masih contoh tampilan statis, belum disimpan atau dihitung dari latihan.
+- Build tidak dapat diuji di lingkungan pembuatan ZIP ini karena Gradle harus mengunduh distribusi dari internet. Jalankan Gradle Sync di Android Studio untuk memverifikasi pada komputer kamu.

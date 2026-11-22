@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="32dp" android:background="#FFF9F1">
+ <TextView android:id="@+id/txtTutorialIcon" android:layout_width="120dp" android:layout_height="120dp" android:gravity="center" android:text="🌍" android:textSize="64sp" android:background="#DFF3FB" />
+ <TextView android:id="@+id/txtTutorialTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:gravity="center" android:text="Welcome to LinguaLoop" android:textColor="#7F263D" android:textSize="24sp" android:textStyle="bold" />
+ <TextView android:id="@+id/txtTutorialDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="center" android:text="Learn a new language one little step at a time." android:textColor="#66575A" android:textSize="16sp" />
+</LinearLayout>

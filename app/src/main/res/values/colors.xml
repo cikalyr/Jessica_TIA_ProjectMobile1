@@ -1,0 +1,6 @@
+<resources><color name="black">#FF000000</color><color name="btn_login">#7F263D</color><color name="text">#7F263D</color><color name="white">#FFFFFFFF</color><color name="cream">#FFF9F1</color><color name="maroon">#7F263D</color><color name="sky">#DFF3FB</color><color name="sand">#F3E5CD</color><color name="muted">#927F7A</color>    <color name="lingua_cream">#FFF9F1</color>
+    <color name="lingua_maroon">#7F263D</color>
+    <color name="lingua_blue">#DFF3FB</color>
+    <color name="lingua_beige">#F3E5CD</color>
+    <color name="lingua_dot">#7F263D</color>
+</resources>

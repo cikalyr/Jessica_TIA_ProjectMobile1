@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFF9F1"><LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp"><TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Discover your next lesson" android:textColor="#7F263D" android:textSize="24sp" android:textStyle="bold"/><TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Small steps every day bring you closer to fluency." android:textColor="#927F7A" android:textSize="14sp"/><TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:background="#DFF3FB" android:padding="20dp" android:text="🌟  TODAY'S PICK
+
+Basic Greetings
+Learn simple expressions to greet people and start a conversation." android:textColor="#44363A" android:textSize="16sp"/><TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:background="#7F263D" android:padding="20dp" android:text="Your learning journey
+
+Choose the Lessons tab to explore learning materials arranged in a two-column grid." android:textColor="#FFFFFF" android:textSize="15sp"/></LinearLayout></ScrollView>

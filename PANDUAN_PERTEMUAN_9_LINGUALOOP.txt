@@ -1,0 +1,22 @@
+PANDUAN IMPLEMENTASI PERTEMUAN 9 - LINGUALOOP
+
+Perubahan yang ditambahkan:
+1. NinthActivity: halaman praktikum baru yang dibuka dari tombol Practice Components (Pertemuan 9) di Home.
+2. TextInputLayout + TextInputEditText: input nama learner dengan counter maksimal 20 karakter.
+3. ChipGroup: pilihan bahasa English, Japanese, Korean, Spanish. Pilihan menampilkan Toast.
+4. Drawable: bg_header_wave.xml dan bg_rounded_container.xml sudah dibuat sebagai resource drawable untuk header melengkung dan kotak input.
+5. GridLayout: enam tombol Vocabulary, Quick Quiz, Grammar, Listening, Speaking, My Progress; masing-masing menampilkan Toast.
+6. TutorialActivity: tutorial tiga halaman menggunakan ViewPager2 dan DotsIndicator.
+7. Tombol App Tutorial di Home membuka tutorial.
+
+Cara mencoba:
+- Buka folder Jessica_3TIA di Android Studio.
+- Tunggu Gradle Sync. Pastikan koneksi internet tersedia untuk mengunduh GridLayout, ViewPager2, dan DotsIndicator.
+- Jalankan aplikasi, login, buka tab Home.
+- Tekan Practice Components (Pertemuan 9) untuk mencoba form, ChipGroup, dan GridLayout.
+- Kembali ke Home lalu tekan App Tutorial untuk menggeser tiga halaman tutorial.
+
+Catatan:
+- bg_header_wave.xml dan bg_rounded_container.xml disediakan sebagai drawable sesuai modul. Jika ingin memasang wave secara visual di area header Home, pasang sebagai background pada View header di fragment_home.xml.
+- Implementasi disesuaikan dengan aplikasi LinguaLoop, bukan tema kopi pada contoh latihan modul.
+- Build belum diverifikasi di emulator pada lingkungan pembuatan ini. Jika Gradle Sync atau resource menampilkan error, kirimkan screenshot Build Output.

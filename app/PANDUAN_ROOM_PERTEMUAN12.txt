@@ -1,0 +1,30 @@
+LINGUALOOP - IMPLEMENTASI PERTEMUAN 12 ROOM DATABASE
+
+FITUR
+- More > My Learning Notes (Room Database) membuka halaman catatan.
+- Tombol + untuk menambah catatan.
+- Ketuk catatan untuk mengedit.
+- Tekan lama catatan untuk menghapus dengan konfirmasi.
+- Data tersimpan lokal pada SQLite melalui Room.
+
+STRUKTUR
+ data/entity/NoteEntity.kt : Entity tabel notes
+ data/dao/NoteDao.kt       : Insert, Update, Delete, Query Flow
+ data/AppDatabase.kt      : RoomDatabase singleton dan migration 1 ke 2
+ Note/NoteActivity.kt     : Activity halaman catatan
+ Note/NoteFragment.kt     : UI dan coroutine pengelolaan catatan
+ Note/NoteAdapter.kt      : RecyclerView adapter
+
+DEPENDENCY
+Room 2.8.4 + KSP 2.3.2. Jika Gradle Sync gagal karena versi plugin, pastikan versi Kotlin/AGP kompatibel dengan KSP pada Android Studio.
+
+PENGUJIAN
+1. Sync Gradle dan jalankan aplikasi.
+2. Buka tab More > My Learning Notes.
+3. Tambahkan judul dan isi, simpan.
+4. Tutup halaman lalu buka kembali; catatan harus tetap tampil.
+5. Ketuk catatan untuk edit. Tekan lama untuk hapus.
+6. Buka App Inspection > Database Inspector saat aplikasi berjalan, pilih app_database lalu tabel notes.
+
+MIGRASI
+Database dideklarasikan versi 2. MIGRATION_1_2 menambahkan kolom isPinned dengan default 0. Migration disertakan dalam builder. Untuk uji migrasi riil, perlu memasang versi database v1 terlebih dahulu, mengisi catatan, lalu memperbarui aplikasi ke versi v2.

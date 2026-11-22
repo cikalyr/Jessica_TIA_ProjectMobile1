@@ -1,0 +1,46 @@
+LINGUALOOP - PANDUAN VERSI UTS
+
+Project mempertahankan package com.example.jessica_tia dan desain cream-maroon-beige-biru.
+
+FITUR MODUL PERTEMUAN 5
+- Toolbar dan tombol back: WebViewActivity.
+- Option Menu: menu utama MainActivity (Tips Belajar dan Logout).
+- CoordinatorLayout + AppBarLayout + WebView; toolbar collapse/expand saat halaman web digulir.
+- WebView menampilkan materi tips belajar lokal (tidak memerlukan internet untuk isi HTML).
+
+FITUR MODUL PERTEMUAN 6
+- LoginActivity dengan validasi input sederhana.
+- AlertDialog konfirmasi logout.
+- Intent untuk perpindahan Activity.
+- SharedPreferences menyimpan username dan status login.
+- SplashActivity memakai lifecycleScope + delay dan mengecek status login sebelum membuka Login/Main.
+- Fragment Home, Vocabulary, More, Profile.
+
+FITUR MODUL PERTEMUAN 7
+- BottomNavigationView untuk Home, Learn, More, Profile.
+- Fragment sebagai halaman utama.
+- ListView dengan Custom Adapter pada tab Learn.
+- Glide memuat avatar dari URL (perlu internet dan izin INTERNET).
+- ArrayAdapter dan SimpleAdapter dapat dicoba melalui dua tombol pada tab More.
+- CoordinatorLayout + AppBarLayout membuat toolbar tab More dapat disembunyikan/ditampilkan saat scroll.
+
+FITUR MODUL PERTEMUAN 9
+- NinthActivity dibuka dari tombol Practice Components pada Home.
+- TextInputLayout, MaterialButton, ChipGroup, drawable rounded, bg_header_wave, GridLayout.
+- TutorialActivity memakai ViewPager2 + FragmentStateAdapter (tiga TutorialPageFragment) dan DotsIndicator.
+
+ALUR UJI MANUAL
+1. Jalankan aplikasi: Splash -> Login -> Home.
+2. Isi username dan password (demo: keduanya hanya diwajibkan terisi; tidak ada backend/autentikasi server).
+3. Home -> Practice Components: uji form, chip, grid, tutorial.
+4. Tab Learn: klik item kosakata; avatar Glide membutuhkan internet.
+5. Tab More: coba ArrayAdapter dan SimpleAdapter; gulir daftar untuk melihat toolbar.
+6. Menu Tips Belajar membuka WebView; menu Logout meminta konfirmasi.
+7. Tutup dan buka ulang aplikasi: status login masih tersimpan sampai logout.
+
+CATATAN JUJUR
+- Login merupakan simulasi lokal, bukan sistem akun/database.
+- Streak/XP/progres tampilan masih data contoh, kecuali hasil kuis sederhana.
+- Glide memakai URL avatar eksternal; tanpa internet placeholder akan tampil.
+- ViewPager2 dan DotsIndicator memerlukan dependency Gradle tersinkron.
+- Jalankan Gradle Sync dan Build di Android Studio sebelum demo UTS.

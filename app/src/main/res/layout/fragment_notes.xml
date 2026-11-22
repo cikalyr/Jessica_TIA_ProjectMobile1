@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFF9F1">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Simpan kosakata, grammar, dan hal penting yang kamu pelajari." android:textColor="#7F263D" android:textSize="15sp" android:paddingBottom="12dp" />
+        <TextView android:id="@+id/txtEmptyNotes" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Belum ada catatan. Tekan + untuk menambahkan catatan pertamamu." android:textColor="#927F7A" android:gravity="center" android:padding="24dp" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerNotes" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fabAddNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end" android:layout_margin="20dp" android:contentDescription="Tambah catatan" android:src="@android:drawable/ic_input_add" app:backgroundTint="#7F263D" app:tint="#FFFFFF" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

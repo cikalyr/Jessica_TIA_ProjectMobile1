@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+    <EditText android:id="@+id/edtNoteTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Judul catatan" android:inputType="textCapSentences" />
+    <EditText android:id="@+id/edtNoteContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Isi catatan" android:inputType="textCapSentences|textMultiLine" android:minLines="3" android:gravity="top" android:layout_marginTop="12dp" />
+</LinearLayout>

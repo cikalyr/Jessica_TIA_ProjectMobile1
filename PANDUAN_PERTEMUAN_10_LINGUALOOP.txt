@@ -1,0 +1,23 @@
+LINGUALOOP - IMPLEMENTASI PERTEMUAN 10
+
+FITUR BARU
+1. Tombol Explore Tabs & RecyclerView (Pertemuan 10) ada di Home.
+2. TenthActivity menggunakan Toolbar dan tombol Back.
+3. TabLayout + ViewPager2 + TabLayoutMediator menghubungkan tiga tab: Discover, Study Tips, Lessons.
+4. Tab memakai ikon dan badge (titik dan angka).
+5. TabLayout dikustomisasi dengan warna teks aktif/tidak aktif, indikator, tinggi indikator, ripple, dan mode fixed.
+6. Tab Lessons menggunakan RecyclerView dengan GridLayoutManager dua kolom.
+7. ProductAdapter memakai ViewHolder, onCreateViewHolder, onBindViewHolder, getItemCount dan Glide.
+8. Tersedia 50 materi belajar bahasa (bukan produk toko) dengan gambar URL.
+9. ChipGroup memfilter materi: All, Beginner, Intermediate, Grammar, Speaking.
+10. Klik kartu materi menampilkan Toast berisi judul materi.
+
+CARA MENJALANKAN
+- Ekstrak ZIP dan buka folder Jessica_3TIA di Android Studio.
+- Pastikan internet aktif, lalu tekan Sync Now.
+- Jalankan aplikasi, buka tab Home, tekan tombol Explore Tabs & RecyclerView (Pertemuan 10).
+- Coba klik tab, geser ViewPager2, pilih chip filter, gulir grid, dan tekan kartu materi.
+
+CATATAN
+Glide memuat gambar dari internet; pastikan izin INTERNET ada di AndroidManifest.xml.
+Build belum diverifikasi di emulator pada saat arsip dibuat. Jalankan Gradle Sync dan Run di Android Studio.

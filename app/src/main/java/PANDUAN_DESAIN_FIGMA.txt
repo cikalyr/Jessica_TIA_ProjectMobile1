@@ -1,0 +1,17 @@
+LINGUALOOP - UPDATE DESAIN BERDASARKAN SCREENSHOT FIGMA
+
+Tema: cream (#FFF9F1), maroon (#7F263D), sky blue (#DFF3FB), beige (#F3E5CD).
+
+Alur yang sudah dibuat:
+1. Welcome/Login: isi nama dan password demo lalu Get Started. Login masih lokal (tidak terhubung server).
+2. Home dashboard: kartu streak, target harian, pelajaran; tombol Continue learning membuka learning path.
+3. Learning path: tombol Start lesson membuka vocabulary lesson.
+4. Vocabulary lesson: tombol I understand membuka kuis.
+5. Interactive quiz: pilih jawaban, tekan Check Answer; aplikasi memvalidasi pilihan dan menampilkan hasil.
+6. Lesson result: Continue Learning kembali ke halaman utama.
+7. Profile: profil/progres visual dan tombol Logout.
+8. Vocabulary tab: daftar kosakata; ketuk kata untuk melihat terjemahan.
+
+Catatan: screenshot Figma menjadi referensi visual. Layout native XML ini merepresentasikan warna, kartu, tipografi dan alur utama, tetapi belum pixel-perfect. Angka streak/XP/progres masih contoh statis. WebView Tips Belajar dan menu logout tetap dipertahankan.
+
+Buka folder Jessica_3TIA melalui Android Studio. Jalankan Sync Project with Gradle Files, kemudian Run. Project belum diverifikasi dengan build emulator pada lingkungan ini.

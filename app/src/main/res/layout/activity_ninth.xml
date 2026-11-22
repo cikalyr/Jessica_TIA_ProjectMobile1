@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFF9F1" android:fillViewport="true">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+  <androidx.appcompat.widget.Toolbar android:id="@+id/toolbarNinth" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="#7F263D" app:title="Practice Components" app:titleTextColor="#FFFFFF" />
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Personalize your learning" android:textColor="#7F263D" android:textSize="22sp" android:textStyle="bold" />
+  <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilName" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="Your name" app:counterEnabled="true" app:counterMaxLength="20" app:helperText="Enter your learner name" app:endIconMode="clear_text">
+   <com.google.android.material.textfield.TextInputEditText android:id="@+id/etLearnerName" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="20" android:inputType="textPersonName" />
+  </com.google.android.material.textfield.TextInputLayout>
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Choose a language" android:textColor="#7F263D" android:textSize="18sp" android:textStyle="bold" />
+  <com.google.android.material.chip.ChipGroup android:id="@+id/chipGroupLanguage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:singleSelection="true" app:selectionRequired="true">
+   <com.google.android.material.chip.Chip android:id="@+id/chipEnglish" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="🇬🇧 English" />
+   <com.google.android.material.chip.Chip android:id="@+id/chipJapanese" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🇯🇵 Japanese" />
+   <com.google.android.material.chip.Chip android:id="@+id/chipKorean" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🇰🇷 Korean" />
+   <com.google.android.material.chip.Chip android:id="@+id/chipSpanish" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🇪🇸 Spanish" />
+  </com.google.android.material.chip.ChipGroup>
+  <EditText android:id="@+id/etLearningGoal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:background="@drawable/bg_rounded_container" android:hint="Your learning goal" android:inputType="textCapSentences" />
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Learning shortcuts" android:textColor="#7F263D" android:textSize="18sp" android:textStyle="bold" />
+  <androidx.gridlayout.widget.GridLayout android:id="@+id/gridLearning" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="6dp" app:columnCount="2" app:useDefaultMargins="true">
+   <com.google.android.material.button.MaterialButton android:id="@+id/btnGridVocabulary" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Vocabulary" app:layout_columnWeight="1" app:layout_gravity="fill_horizontal" app:cornerRadius="14dp" />
+   <com.google.android.material.button.MaterialButton android:id="@+id/btnGridQuiz" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Quick Quiz" app:layout_columnWeight="1" app:layout_gravity="fill_horizontal" app:cornerRadius="14dp" />
+   <com.google.android.material.button.MaterialButton android:id="@+id/btnGridGrammar" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Grammar" app:layout_columnWeight="1" app:layout_gravity="fill_horizontal" app:cornerRadius="14dp" />
+   <com.google.android.material.button.MaterialButton android:id="@+id/btnGridListening" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Listening" app:layout_columnWeight="1" app:layout_gravity="fill_horizontal" app:cornerRadius="14dp" />
+   <com.google.android.material.button.MaterialButton android:id="@+id/btnGridSpeaking" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Speaking" app:layout_columnWeight="1" app:layout_gravity="fill_horizontal" app:cornerRadius="14dp" />
+   <com.google.android.material.button.MaterialButton android:id="@+id/btnGridProgress" android:layout_width="0dp" android:layout_height="wrap_content" android:text="My Progress" app:layout_columnWeight="1" app:layout_gravity="fill_horizontal" app:cornerRadius="14dp" />
+  </androidx.gridlayout.widget.GridLayout>
+  <com.google.android.material.button.MaterialButton android:id="@+id/btnSavePractice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Save Preferences" app:cornerRadius="18dp" />
+  <com.google.android.material.button.MaterialButton android:id="@+id/btnOpenTutorial" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Open App Tutorial" app:cornerRadius="18dp" />
+ </LinearLayout>
+</ScrollView>
